@@ -115,56 +115,16 @@ a:hover {
 
 
 @media screen and (max-width: 767px) {
-    /* Ajuste do corpo e contêiner */
-    body {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    .container {
+        width: 80vw;
+        padding: 1rem;
     }
 
-    .esqueceu-senha-container {
-        width: 90vw; /* Aumenta a largura do contêiner para 90% da tela */
-        padding: 1rem; /* Reduz o padding para caber melhor */
-        box-sizing: border-box;
-    }
-
-    /* Ajuste para o título (h1) */
     h1 {
-        font-size: 1.8rem; /* Reduz o tamanho do título */
-        text-align: center;
+        font-size: 1.8rem;
     }
 
-    /* Ajuste para o parágrafo de instrução */
-    p {
-        font-size: 1rem; /* Ajusta o tamanho da fonte */
-        text-align: center; /* Centraliza o texto */
-        margin-bottom: 1rem;
-    }
-
-    /* Ajuste para os campos de entrada (input) */
-    input {
-        width: 100%; /* Garante que o input ocupe toda a largura disponível */
-        padding: 0.75rem; /* Ajusta o padding */
-        margin-bottom: 1rem;
-        font-size: 1rem; /* Tamanho da fonte ajustado */
-    }
-
-    /* Ajuste para o botão de envio */
-    button {
-        width: 100%; /* Garante que o botão ocupe toda a largura disponível */
-        padding: 0.75rem;
-        font-size: 1rem; /* Tamanho da fonte ajustado */
-        margin-top: 1rem;
-    }
-
-    /* Ajuste para o link "Voltar para o login" */
-    a {
+    input, button {
         font-size: 1rem;
-        text-align: center;
-        display: block; /* Garante que o link ocupe uma linha completa */
-        margin-top: 1rem;
     }
 }
