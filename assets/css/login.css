@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root{
+    --backgroud-color: #201b2c;
+    --second-color:#2F2841;
+    --text-color: #77ffc0;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto sans";
+    background-color: var(--backgroud-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+.left-login {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login > h1 {
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: -4rem;
+}
+
+.login {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 30vw;
+    padding: 3rem;
+    background-color: #2f284186;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.356);
+    text-align: center;
+}
+
+input {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #2F2841;
+    color: white;
+    margin-top: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--text-color);
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #77ffc0;
+    margin-top: 1rem;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.cadastro {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #77ffc0;
+    color: black;
+    margin-top: 1rem;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+.cadastro:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px var(--text-color);
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px var(--text-color);
+}
+
+
+@media screen and (min-width: 1024px) {
+    form {
+        width: 37vw;
+        height: auto;
+    }
+
+    img {
+        width: 45vw;
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-login, .login {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    form {
+        width: 60vw;
+        padding: 2rem;
+    }
+
+    button, input, .cadastro {
+        width: 100%;
+    }
+
+    .left-login > h1 {
+        font-size: 2.2rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-login, .login {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    form {
+        width: 80vw;
+        padding: 1rem;
+    }
+
+    button, input, .cadastro {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .left-login > h1 {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}
