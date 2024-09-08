@@ -31,7 +31,7 @@ main {
     align-items: center;
 }
 
-.esqueceu-senha-container {
+.container {
     background-color: #2f284186;
     padding: 3rem;
     border-radius: 2rem;
@@ -95,14 +95,14 @@ a:hover {
 
 
 @media screen and (min-width: 1024px) {
-    .forgot-password-container {
+    .container {
         width: 30%;
     }
 }
 
-/* Media Query para dispositivos móveis (menos de 767px) */
+
 @media screen and (max-width: 767px) {
-    .forgot-password-container {
+    .container {
         width: 90%;
         padding: 1rem;
     }
