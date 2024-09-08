@@ -68,7 +68,7 @@ a:hover {
 
 
 @media screen and (max-width: 1023px) {
-    .forgot-password-container {
+    .container {
         width: 50vw;
         padding: 2rem;
     }
@@ -87,78 +87,24 @@ a:hover {
 }
 
 
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 30%;
+    }
+}
+
+
 @media screen and (max-width: 767px) {
-
-    /* Alinhamento geral para telas menores */
-    body {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    .container {
+        width: 90%;
+        padding: 1rem;
     }
 
-    /* Ajuste para o contêiner principal de cadastro/login */
-    .signup-container, .cadastro-container {
-        width: 90vw; /* Aumenta a largura para ocupar mais da tela */
-        padding: 1rem; /* Reduz o padding para dispositivos móveis */
-        box-sizing: border-box;
-    }
-
-    /* Ajuste para o título (h1) */
     h1 {
-        font-size: 1.8rem; /* Reduz o tamanho do título */
-        text-align: center;
+        font-size: 1.8rem;
     }
 
-    /* Ajuste para campos de entrada (inputs) */
-    input {
-        width: 100%; /* Garante que o input ocupe toda a largura disponível */
-        padding: 0.75rem; /* Ajusta o padding */
-        margin-bottom: 1rem;
-        font-size: 1rem; /* Reduz o tamanho da fonte */
-    }
-
-    /* Ajuste para o botão de cadastro/login */
-    button {
-        width: 100%; /* Garante que o botão ocupe toda a largura disponível */
-        padding: 0.75rem;
-        font-size: 1rem; /* Tamanho da fonte ajustado */
-        margin-top: 1rem;
-    }
-
-    /* Ajuste para o link de login/cadastro */
-    p {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte */
-        text-align: center;
-    }
-
-    a {
-        font-size: 0.9rem;
-        text-align: center;
-    }
-
-    /* Ajuste para o diagrama ternário (tela de impacto ambiental) */
-    canvas {
-        width: 90vw; /* O canvas agora se adapta à largura da tela */
-        height: auto; /* Mantém a proporção da altura automaticamente */
-    }
-
-    /* Ajustes para a barra lateral (caso tenha no diagrama ternário) */
-    .sidebar {
-        width: 100%; /* A barra lateral ocupa toda a largura da tela */
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-    /* Ajustes gerais para o formulário de inserção de dados no diagrama */
-    form input, form button {
-        width: 100%; /* Inputs e botões ocupam toda a largura da tela */
+    p, a {
         font-size: 1rem;
-    }
-
-    form label {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte das labels */
     }
 }
